@@ -33,6 +33,7 @@ body {
   box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5019607843), 0 0 0 8px rgba(255, 0, 0, 0.2509803922), 0 0 0 12px rgba(255, 0, 0, 0.1254901961), 0 0 0 16px rgba(255, 0, 0, 0.062745098), 0 0 0 20px rgba(255, 0, 0, 0), 0 0 4px 20px rgba(255, 0, 0, 0.062745098);
   animation: sunrise 2s infinite linear, rays 2s 2s infinite linear;
   cursor: pointer;
+  transition: 1s;
 }
 
 @keyframes sunrise {

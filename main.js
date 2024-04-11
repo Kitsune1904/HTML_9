@@ -34,51 +34,31 @@ let uranusBtn = document.getElementById("backUranus");
 let neptuneBtn = document.getElementById("backNeptune");
 let plutoBtn = document.getElementById("backPluto");
 
-const hideOrShow = (state) => {
+const hideOrShow = (state, info) => {
   if (state === "hide") {
     solarSystem.style.visibility = "hidden";
     toDo.style.visibility = "hidden";
+    info.style.display = "flex";
+    sun.style.transition = "0s";
   } else if (state === "show") {
     solarSystem.style.visibility = "visible";
     toDo.style.visibility = "visible";
+    info.style.display = "none";
+    sun.style.transition = "1s";
   }
 };
 
-sun.addEventListener("click", () => {
-  hideOrShow("hide");
-  sunInfo.style.display = "flex";
-});
-sunBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  sunInfo.style.display = "none";
-});
+sun.addEventListener("click", () => hideOrShow("hide", sunInfo));
+sunBtn.addEventListener("click", () => hideOrShow("show", sunInfo));
 
-mercury.addEventListener("click", () => {
-  hideOrShow("hide");
-  mercuryInfo.style.display = "flex";
-});
-mercuryBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  mercuryInfo.style.display = "none";
-});
+mercury.addEventListener("click", () => hideOrShow("hide", mercuryInfo));
+mercuryBtn.addEventListener("click", () => hideOrShow("show", mercuryInfo));
 
-venus.addEventListener("click", () => {
-  hideOrShow("hide");
-  venusInfo.style.display = "flex";
-});
-venusBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  venusInfo.style.display = "none";
-});
+venus.addEventListener("click", () => hideOrShow("hide", venusInfo));
+venusBtn.addEventListener("click", () => hideOrShow("show", venusInfo));
 
-earth.addEventListener("click", () => {
-  hideOrShow("hide");
-  earthInfo.style.display = "flex";
-});
-earthBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  earthInfo.style.display = "none";
-});
+earth.addEventListener("click", () => hideOrShow("hide", earthInfo));
+earthBtn.addEventListener("click", () => hideOrShow("show", earthInfo));
 
 mars.addEventListener("click", () => {
   hideOrShow("hide");

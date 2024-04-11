@@ -13,19 +13,31 @@
   padding: 30px;
   border-radius: 8px;
 }
-.sun-info h1, .sun-info h2, .mercury-info h1, .mercury-info h2, .venus-info h1, .venus-info h2, .earth-info h1, .earth-info h2, .mars-info h1, .mars-info h2, .jupiter-info h1, .jupiter-info h2, .saturn-info h1, .saturn-info h2, .uranus-info h1, .uranus-info h2, .neptune-info h1, .neptune-info h2, .pluto-info h1, .pluto-info h2 {
+.sun-info h1, .sun-info h2, .sun-info a, .mercury-info h1, .mercury-info h2, .mercury-info a, .venus-info h1, .venus-info h2, .venus-info a, .earth-info h1, .earth-info h2, .earth-info a, .mars-info h1, .mars-info h2, .mars-info a, .jupiter-info h1, .jupiter-info h2, .jupiter-info a, .saturn-info h1, .saturn-info h2, .saturn-info a, .uranus-info h1, .uranus-info h2, .uranus-info a, .neptune-info h1, .neptune-info h2, .neptune-info a, .pluto-info h1, .pluto-info h2, .pluto-info a {
   color: whitesmoke;
   text-align: center;
   margin: 0 0 30px 0;
 }
-.sun-info h2, .mercury-info h2, .venus-info h2, .earth-info h2, .mars-info h2, .jupiter-info h2, .saturn-info h2, .uranus-info h2, .neptune-info h2, .pluto-info h2 {
+.sun-info h2, .sun-info a, .mercury-info h2, .mercury-info a, .venus-info h2, .venus-info a, .earth-info h2, .earth-info a, .mars-info h2, .mars-info a, .jupiter-info h2, .jupiter-info a, .saturn-info h2, .saturn-info a, .uranus-info h2, .uranus-info a, .neptune-info h2, .neptune-info a, .pluto-info h2, .pluto-info a {
   background: rgb(245, 245, 245);
   color: black;
   margin: 30px 0 0 0;
   border-radius: 8px;
   cursor: pointer;
+  transition: 1s;
+}
+.sun-info a, .mercury-info a, .venus-info a, .earth-info a, .mars-info a, .jupiter-info a, .saturn-info a, .uranus-info a, .neptune-info a, .pluto-info a {
+  text-decoration: none;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
 }
 .sun-info p, .mercury-info p, .venus-info p, .earth-info p, .mars-info p, .jupiter-info p, .saturn-info p, .uranus-info p, .neptune-info p, .pluto-info p {
   color: whitesmoke;
   text-align: justify;
+}
+.sun-info h2:hover, .sun-info a:hover, .mercury-info h2:hover, .mercury-info a:hover, .venus-info h2:hover, .venus-info a:hover, .earth-info h2:hover, .earth-info a:hover, .mars-info h2:hover, .mars-info a:hover, .jupiter-info h2:hover, .jupiter-info a:hover, .saturn-info h2:hover, .saturn-info a:hover, .uranus-info h2:hover, .uranus-info a:hover, .neptune-info h2:hover, .neptune-info a:hover, .pluto-info h2:hover, .pluto-info a:hover {
+  transform: scale(1.05);
+  background-color: rgb(40, 64, 116);
+  color: whitesmoke;
 }/*# sourceMappingURL=info_styles.css.map */

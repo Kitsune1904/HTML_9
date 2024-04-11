@@ -7,6 +7,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .explanation > p {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.815);
@@ -34,6 +36,7 @@ body {
     0 0 0 16px #ff000010, 0 0 0 20px #ff000000, 0 0 4px 20px #ff000010;
   animation: sunrise 2s infinite linear, rays 2s 2s infinite linear;
   cursor: pointer;
+  transition: 1s;
 }
 
 
