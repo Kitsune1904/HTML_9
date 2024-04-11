@@ -306,6 +306,35 @@ body {
   }
 }
 
+.pluto {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/pluto.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  animation: pluto 60s linear infinite;
+  position: absolute;
+  top: 48.7%;
+  left: 48.7%;
+  transform: translate(-49%, -49%);
+  cursor: pointer;
+  
+  p {
+      top: 10px;
+      left: -5px;
+  }
+}
+
+@keyframes pluto {
+  from {
+    transform: rotate(0deg) translateX(350px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(350px) rotate(-360deg);
+  }
+}
+
 .sun-orbit,
 .mercury-orbit,
 .venus-orbit,
@@ -314,7 +343,8 @@ body {
 .jupiter-orbit,
 .saturn-orbit,
 .uranus-orbit,
-.neptune-orbit {
+.neptune-orbit,
+.pluto-orbit {
   border: 1px dashed whitesmoke;
   border-radius: 50%;
   position: absolute;
@@ -376,6 +406,12 @@ body {
   z-index: 100;
 }
 
+.pluto-orbit {
+  height: 700px;
+  width: 700px;
+  z-index: 50;
+}
+
 .sun:hover {
     transform: scale(1.2);
 }
@@ -387,6 +423,7 @@ body {
 .jupiter:hover p,
 .saturn:hover p,
 .uranus:hover p,
-.neptune:hover p {
+.neptune:hover p,
+.pluto:hover p {
     transform: scale(1.5);
 }
