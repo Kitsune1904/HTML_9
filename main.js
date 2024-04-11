@@ -60,56 +60,20 @@ venusBtn.addEventListener("click", () => hideOrShow("show", venusInfo));
 earth.addEventListener("click", () => hideOrShow("hide", earthInfo));
 earthBtn.addEventListener("click", () => hideOrShow("show", earthInfo));
 
-mars.addEventListener("click", () => {
-  hideOrShow("hide");
-  marsInfo.style.display = "flex";
-});
-marsBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  marsInfo.style.display = "none";
-});
+mars.addEventListener("click", () => hideOrShow("hide", marsInfo));
+marsBtn.addEventListener("click", () => hideOrShow("show", marsInfo));
 
-jupiter.addEventListener("click", () => {
-  hideOrShow("hide");
-  jupiterInfo.style.display = "flex";
-});
-jupiterBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  jupiterInfo.style.display = "none";
-});
+jupiter.addEventListener("click", () => hideOrShow("hide", jupiterInfo))
+jupiterBtn.addEventListener("click", () => hideOrShow("show", jupiterInfo));
 
-saturn.addEventListener("click", () => {
-  hideOrShow("hide");
-  saturnInfo.style.display = "flex";
-});
-saturnBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  saturnInfo.style.display = "none";
-});
+saturn.addEventListener("click", () => hideOrShow("hide", saturnInfo))
+saturnBtn.addEventListener("click", () =>  hideOrShow("show", saturnInfo))
 
-uranus.addEventListener("click", () => {
-  hideOrShow("hide");
-  uranusInfo.style.display = "flex";
-});
-uranusBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  uranusInfo.style.display = "none";
-});
+uranus.addEventListener("click", () => hideOrShow("hide", uranusInfo))
+uranusBtn.addEventListener("click", () => hideOrShow("show", uranusInfo))
 
-neptune.addEventListener("click", () => {
-  hideOrShow("hide");
-  neptuneInfo.style.display = "flex";
-});
-neptuneBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  neptuneInfo.style.display = "none";
-});
+neptune.addEventListener("click", () => hideOrShow("hide", neptuneInfo))
+neptuneBtn.addEventListener("click", () => hideOrShow("show", neptuneInfo))
 
-pluto.addEventListener("click", () => {
-  hideOrShow("hide");
-  plutoInfo.style.display = "flex";
-});
-plutoBtn.addEventListener("click", () => {
-  hideOrShow("show");
-  plutoInfo.style.display = "none";
-});
+pluto.addEventListener("click", () => hideOrShow("hide", plutoInfo))
+plutoBtn.addEventListener("click", () => hideOrShow("show", plutoInfo))
