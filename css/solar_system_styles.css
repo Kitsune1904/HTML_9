@@ -22,17 +22,42 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 
-.sun {
-  background-image: url("../images/sun.png");
+.sun,
+.mercury,
+.venus,
+.earth,
+.mars,
+.saturn,
+.jupiter,
+.uranus,
+.neptune,
+.pluto {
   background-size: cover;
   background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mercury,
+.venus,
+.earth,
+.mars,
+.saturn,
+.jupiter,
+.uranus,
+.neptune,
+.pluto,
+.staturn-disk {
+  position: absolute;
+}
+
+.sun {
+  background-image: url("../images/sun.png");
   width: 90px;
   height: 90px;
-  border-radius: 50%;
   box-shadow: 0 0 30px rgb(255, 38, 0);
   box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5019607843), 0 0 0 8px rgba(255, 0, 0, 0.2509803922), 0 0 0 12px rgba(255, 0, 0, 0.1254901961), 0 0 0 16px rgba(255, 0, 0, 0.062745098), 0 0 0 20px rgba(255, 0, 0, 0), 0 0 4px 20px rgba(255, 0, 0, 0.062745098);
   animation: sunrise 2s infinite linear, rays 2s 2s infinite linear;
-  cursor: pointer;
   transition: 1s;
 }
 
@@ -53,15 +78,10 @@ body {
   height: 20px;
   width: 20px;
   background-image: url("../images/mercury.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: mercury 5s linear infinite;
-  position: absolute;
   top: 43%;
   left: 43%;
   transform: translate(-43%, -43%);
-  cursor: pointer;
 }
 .mercury p {
   top: 5px;
@@ -80,15 +100,10 @@ body {
   height: 30px;
   width: 30px;
   background-image: url("../images/venus.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: venus 8s linear infinite;
-  position: absolute;
   top: 43%;
   left: 43%;
   transform: translate(-43%, -43%);
-  cursor: pointer;
 }
 .venus p {
   top: 15px;
@@ -107,15 +122,10 @@ body {
   height: 32px;
   width: 32px;
   background-image: url("../images/earth.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: earth 10s linear infinite;
-  position: absolute;
   top: 44%;
   left: 44%;
   transform: translate(-44%, -44%);
-  cursor: pointer;
 }
 .earth p {
   bottom: -30px;
@@ -133,15 +143,10 @@ body {
   height: 25px;
   width: 25px;
   background-image: url("../images/mars.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: mars 15s linear infinite;
-  position: absolute;
   top: 46%;
   left: 46%;
   transform: translate(-46%, -46%);
-  cursor: pointer;
 }
 .mars p {
   bottom: -30px;
@@ -160,15 +165,10 @@ body {
   height: 38px;
   width: 38px;
   background-image: url("../images/jupiter.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: jupiter 20s linear infinite;
-  position: absolute;
   top: 45%;
   left: 45%;
   transform: translate(-45%, -45%);
-  cursor: pointer;
 }
 .jupiter p {
   top: 25px;
@@ -186,15 +186,10 @@ body {
   height: 38px;
   width: 38px;
   background-image: url("../images/saturn.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: saturn 25s linear infinite;
-  position: absolute;
   top: 46%;
   left: 46%;
   transform: translate(-46%, -46%);
-  cursor: pointer;
 }
 .saturn p {
   top: 25px;
@@ -213,7 +208,6 @@ body {
   height: 65px;
   width: 67px;
   animation: saturn 25s linear infinite;
-  position: absolute;
   top: 44%;
   left: 43%;
   transform: translate(-44%, -43%);
@@ -226,15 +220,10 @@ body {
   height: 23px;
   width: 23px;
   background-image: url("../images/uranus.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: uranus 35s linear infinite;
-  position: absolute;
   top: 48%;
   left: 48%;
   transform: translate(-48%, -48%);
-  cursor: pointer;
 }
 .uranus p {
   top: 10px;
@@ -253,15 +242,10 @@ body {
   height: 22px;
   width: 22px;
   background-image: url("../images/neptune.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: neptune 45s linear infinite;
-  position: absolute;
   top: 48%;
   left: 48%;
   transform: translate(-48%, -48%);
-  cursor: pointer;
 }
 .neptune p {
   top: 10px;
@@ -280,15 +264,10 @@ body {
   height: 20px;
   width: 20px;
   background-image: url("../images/pluto.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: pluto 60s linear infinite;
-  position: absolute;
   top: 48.7%;
   left: 48.7%;
   transform: translate(-49%, -49%);
-  cursor: pointer;
 }
 .pluto p {
   top: 10px;

@@ -7,14 +7,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .explanation > p {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.815);
-    color: whitesmoke;
-    font-size: 24px;
-    padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: whitesmoke;
+  font-size: 24px;
+  padding: 20px;
 }
 
 .solar-system p {
@@ -24,23 +22,45 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 
-.sun {
-  background-image: url("../images/sun.png");
+.sun,
+.mercury,
+.venus,
+.earth,
+.mars,
+.saturn,
+.jupiter,
+.uranus,
+.neptune,
+.pluto {
   background-size: cover;
   background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mercury,
+.venus,
+.earth,
+.mars,
+.saturn,
+.jupiter,
+.uranus,
+.neptune,
+.pluto,
+.staturn-disk {
+  position: absolute;
+}
+
+.sun {
+  background-image: url("../images/sun.png");
   width: 90px;
   height: 90px;
-  border-radius: 50%;
   box-shadow: 0 0 30px rgb(255, 38, 0);
   box-shadow: 0 0 0 4px #ff000080, 0 0 0 8px #ff000040, 0 0 0 12px #ff000020,
     0 0 0 16px #ff000010, 0 0 0 20px #ff000000, 0 0 4px 20px #ff000010;
   animation: sunrise 2s infinite linear, rays 2s 2s infinite linear;
-  cursor: pointer;
   transition: 1s;
 }
-
-
-
 
 @keyframes sunrise {
   0% {
@@ -59,29 +79,20 @@ body {
   }
 }
 
-
 .mercury {
   height: 20px;
   width: 20px;
   background-image: url("../images/mercury.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: mercury 5s linear infinite;
-  position: absolute;
   top: 43%;
   left: 43%;
   transform: translate(-43%, -43%);
-  cursor: pointer;
 
   p {
     top: 5px;
     right: -15px;
-
   }
 }
-
-
 
 @keyframes mercury {
   from {
@@ -96,19 +107,14 @@ body {
   height: 30px;
   width: 30px;
   background-image: url("../images/venus.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: venus 8s linear infinite;
-  position: absolute;
   top: 43%;
   left: 43%;
   transform: translate(-43%, -43%);
-  cursor: pointer;
-  
+
   p {
-      top: 15px;
-      right: -5px;
+    top: 15px;
+    right: -5px;
   }
 }
 
@@ -125,18 +131,13 @@ body {
   height: 32px;
   width: 32px;
   background-image: url("../images/earth.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: earth 10s linear infinite;
-  position: absolute;
   top: 44%;
   left: 44%;
   transform: translate(-44%, -44%);
-  cursor: pointer;
-  
+
   p {
-      bottom: -30px;
+    bottom: -30px;
   }
 }
 
@@ -153,19 +154,14 @@ body {
   height: 25px;
   width: 25px;
   background-image: url("../images/mars.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: mars 15s linear infinite;
-  position: absolute;
   top: 46%;
   left: 46%;
   transform: translate(-46%, -46%);
-  cursor: pointer;
-  
+
   p {
-      bottom: -30px;
-      left: -5px;
+    bottom: -30px;
+    left: -5px;
   }
 }
 
@@ -182,18 +178,13 @@ body {
   height: 38px;
   width: 38px;
   background-image: url("../images/jupiter.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: jupiter 20s linear infinite;
-  position: absolute;
   top: 45%;
   left: 45%;
   transform: translate(-45%, -45%);
-  cursor: pointer;
-  
+
   p {
-      top: 25px;
+    top: 25px;
   }
 }
 
@@ -210,15 +201,10 @@ body {
   height: 38px;
   width: 38px;
   background-image: url("../images/saturn.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: saturn 25s linear infinite;
-  position: absolute;
   top: 46%;
   left: 46%;
   transform: translate(-46%, -46%);
-  cursor: pointer;
 
   p {
     top: 25px;
@@ -239,34 +225,26 @@ body {
   height: 65px;
   width: 67px;
   animation: saturn 25s linear infinite;
-  position: absolute;
   top: 44%;
   left: 43%;
   transform: translate(-44%, -43%);
   filter: drop-shadow(2px 2px 4px black);
   z-index: 1000;
   cursor: pointer;
-
 }
 
 .uranus {
   height: 23px;
   width: 23px;
   background-image: url("../images/uranus.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: uranus 35s linear infinite;
-  position: absolute;
   top: 48%;
   left: 48%;
   transform: translate(-48%, -48%);
-  cursor: pointer;
-  
-  
+
   p {
-      top: 10px;
-      right: -10px;
+    top: 10px;
+    right: -10px;
   }
 }
 
@@ -283,20 +261,14 @@ body {
   height: 22px;
   width: 22px;
   background-image: url("../images/neptune.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: neptune 45s linear infinite;
-  position: absolute;
   top: 48%;
   left: 48%;
   transform: translate(-48%, -48%);
-  cursor: pointer;
-  
-  
+
   p {
-      top: 10px;
-      right: -15px;
+    top: 10px;
+    right: -15px;
   }
 }
 
@@ -313,19 +285,14 @@ body {
   height: 20px;
   width: 20px;
   background-image: url("../images/pluto.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
   animation: pluto 60s linear infinite;
-  position: absolute;
   top: 48.7%;
   left: 48.7%;
   transform: translate(-49%, -49%);
-  cursor: pointer;
-  
+
   p {
-      top: 10px;
-      left: -5px;
+    top: 10px;
+    left: -5px;
   }
 }
 
@@ -416,7 +383,7 @@ body {
 }
 
 .sun:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .mercury:hover p,
@@ -428,5 +395,5 @@ body {
 .uranus:hover p,
 .neptune:hover p,
 .pluto:hover p {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
