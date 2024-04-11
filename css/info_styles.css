@@ -1,4 +1,4 @@
-.sun-info, .mercury-info, .venus-info {
+.sun-info, .mercury-info, .venus-info, .earth-info, .mars-info, .jupiter-info, .saturn-info, .uranus-info, .neptune-info, .pluto-info {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -8,24 +8,24 @@
   margin: 0 auto;
   transition: 1s;
 }
-.sun-info div, .mercury-info div, .venus-info div {
+.sun-info div, .mercury-info div, .venus-info div, .earth-info div, .mars-info div, .jupiter-info div, .saturn-info div, .uranus-info div, .neptune-info div, .pluto-info div {
   background: rgba(0, 0, 0, 0.75);
   padding: 30px;
   border-radius: 8px;
 }
-.sun-info h1, .sun-info h2, .mercury-info h1, .mercury-info h2, .venus-info h1, .venus-info h2 {
+.sun-info h1, .sun-info h2, .mercury-info h1, .mercury-info h2, .venus-info h1, .venus-info h2, .earth-info h1, .earth-info h2, .mars-info h1, .mars-info h2, .jupiter-info h1, .jupiter-info h2, .saturn-info h1, .saturn-info h2, .uranus-info h1, .uranus-info h2, .neptune-info h1, .neptune-info h2, .pluto-info h1, .pluto-info h2 {
   color: whitesmoke;
   text-align: center;
   margin: 0 0 30px 0;
 }
-.sun-info h2, .mercury-info h2, .venus-info h2 {
+.sun-info h2, .mercury-info h2, .venus-info h2, .earth-info h2, .mars-info h2, .jupiter-info h2, .saturn-info h2, .uranus-info h2, .neptune-info h2, .pluto-info h2 {
   background: rgb(245, 245, 245);
   color: black;
   margin: 30px 0 0 0;
   border-radius: 8px;
   cursor: pointer;
 }
-.sun-info p, .mercury-info p, .venus-info p {
+.sun-info p, .mercury-info p, .venus-info p, .earth-info p, .mars-info p, .jupiter-info p, .saturn-info p, .uranus-info p, .neptune-info p, .pluto-info p {
   color: whitesmoke;
   text-align: justify;
 }/*# sourceMappingURL=info_styles.css.map */
