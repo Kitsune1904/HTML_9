@@ -23,7 +23,7 @@ body {
 }
 
 .sun {
-  background-image: url(../images/sun.png);
+  background-image: url("../images/sun.png");
   background-size: cover;
   background-position: center;
   width: 90px;
@@ -52,7 +52,7 @@ body {
 .mercury {
   height: 20px;
   width: 20px;
-  background-image: url(../images/mercury.jpg);
+  background-image: url("../images/mercury.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -79,7 +79,7 @@ body {
 .venus {
   height: 30px;
   width: 30px;
-  background-image: url(../images/venus.jpg);
+  background-image: url("../images/venus.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -106,7 +106,7 @@ body {
 .earth {
   height: 32px;
   width: 32px;
-  background-image: url(../images/earth.jpg);
+  background-image: url("../images/earth.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -132,7 +132,7 @@ body {
 .mars {
   height: 25px;
   width: 25px;
-  background-image: url(../images/mars.jpg);
+  background-image: url("../images/mars.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -159,7 +159,7 @@ body {
 .jupiter {
   height: 38px;
   width: 38px;
-  background-image: url(../images/jupiter.jpg);
+  background-image: url("../images/jupiter.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -185,7 +185,7 @@ body {
 .saturn {
   height: 38px;
   width: 38px;
-  background-image: url(../images/saturn.jpg);
+  background-image: url("../images/saturn.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -225,7 +225,7 @@ body {
 .uranus {
   height: 23px;
   width: 23px;
-  background-image: url(../images/uranus.jpg);
+  background-image: url("../images/uranus.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -252,7 +252,7 @@ body {
 .neptune {
   height: 22px;
   width: 22px;
-  background-image: url(../images/neptune.jpg);
+  background-image: url("../images/neptune.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -279,7 +279,7 @@ body {
 .pluto {
   height: 20px;
   width: 20px;
-  background-image: url(../images/pluto.jpg);
+  background-image: url("../images/pluto.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
