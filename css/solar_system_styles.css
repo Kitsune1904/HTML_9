@@ -358,5 +358,4 @@ body {
 .uranus:hover p,
 .neptune:hover p {
   transform: scale(1.5);
-  animation-play-state: paused;
 }/*# sourceMappingURL=solar_system_styles.css.map */
