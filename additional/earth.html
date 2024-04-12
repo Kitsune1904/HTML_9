@@ -4,14 +4,696 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Earth</title>
+    <link rel="stylesheet" href="../css/earth_styles.css" />
   </head>
   <body>
-    <div class="sky">
-      <div class="sun"></div>
-      <div class="clouds"></div>
-      <div class="boat"></div>
-      <div class="water"></div>
-      <div class="birds"></div>
+    <div class="conteiner">
+      <header>
+        <a href="../index.html">Back</a>
+        <a href="#">History</a>
+        <a href="#">Planets</a>
+      </header>
+      <main>
+        <div class="chronology-holder">
+          <h2>Chronology</h2>
+          <p>
+            <span id="chronologyBtn">Show</span> chronology of the first ten
+            years of manned space flight.
+          </p>
+          <div class="chronology" id="flightTable">
+            <table>
+              <tr class="main-row">
+                <td>
+                  <p>Ship</p>
+                </td>
+                <td>
+                  <p>Crew</p>
+                </td>
+                <td>
+                  <p>Launch date</p>
+                </td>
+                <td>
+                  <p>Flight duration</p>
+                </td>
+                <td>
+                  <p>Flight goals and results</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Vostok-1 (USSR)</td>
+                <td>Yuri Gagarin</td>
+                <td>
+                  <p>12.04.1961</p>
+                </td>
+                <td>
+                  <p>1 h 48 min</p>
+                </td>
+                <td>The first man in space (1 orbit).</td>
+              </tr>
+              <tr>
+                <td>Mercury-Redstone-3 (USA)</td>
+                <td>Alan Shepard</td>
+                <td>
+                  <p>5.05.1961</p>
+                </td>
+                <td>
+                  <p>15 min 22 s</p>
+                </td>
+                <td>First American in space (suborbital flight).</td>
+              </tr>
+              <tr>
+                <td>Mercury-Redstone-4 (USA)</td>
+                <td>Virgil Grissom</td>
+                <td>
+                  <p>21.07.1961</p>
+                </td>
+                <td>
+                  <p>15 min 37 s</p>
+                </td>
+                <td>
+                  Second American suborbital flight. After splashdown, the ship
+                  sank, Grissom managed to get out of it and waited for rescuers
+                  in the water.
+                </td>
+              </tr>
+              <tr>
+                <td>Vostok-2 (USSR)</td>
+                <td>German Titov</td>
+                <td>
+                  <p>6.08.1961</p>
+                </td>
+                <td>
+                  <p>1 day 1 hour 18 minutes</p>
+                </td>
+                <td>The first flight lasting more than a day (17 orbits).</td>
+              </tr>
+              <tr>
+                <td>Mercury-Atlas-6 (USA)</td>
+                <td>John Glenn</td>
+                <td>
+                  <p>20.02.1962</p>
+                </td>
+                <td>
+                  <p>4 h 55 min</p>
+                </td>
+                <td>First American orbital flight (3 orbits).</td>
+              </tr>
+              <tr>
+                <td>Mercury-Atlas-7 (USA)</td>
+                <td>Malcolm Carpenter</td>
+                <td>
+                  <p>24.05.1962</p>
+                </td>
+                <td>
+                  <p>4 h 56 min</p>
+                </td>
+                <td>
+                  Manual braking control for deorbiting. Splashdown 400
+                  kilometers from the calculated point.
+                </td>
+              </tr>
+              <tr>
+                <td>Vostok-3 (USSR)</td>
+                <td>Andriyan Nikolaev</td>
+                <td>
+                  <p>11.08.1962</p>
+                </td>
+                <td>
+                  <p>3 days 22 hours 22 minutes</p>
+                </td>
+                <td>First group space flight (together with Vostok-4).</td>
+              </tr>
+              <tr>
+                <td>Vostok-4 (USSR)</td>
+                <td>Pavel Popovych</td>
+                <td>
+                  <p>12.08.1962</p>
+                </td>
+                <td>
+                  <p>2 days 22 hours 57 minutes</p>
+                </td>
+                <td>
+                  The first group space flight. On the first orbit, the ship
+                  passed within 5 km of Vostok-3.
+                </td>
+              </tr>
+              <tr>
+                <td>Mercury-Atlas-8 (USA)</td>
+                <td>Walter &nbsp;Schirra</td>
+                <td>
+                  <p>3.10.1962</p>
+                </td>
+                <td>
+                  <p>9 h 13 min</p>
+                </td>
+                <td>
+                  Development of methods for long-term space flights (6 orbits).
+                </td>
+              </tr>
+              <tr>
+                <td>Mercury-Atlas-9 (USA)</td>
+                <td>Gordon Cooper</td>
+                <td>
+                  <p>15.05.1963</p>
+                </td>
+                <td>
+                  <p>1 day 10 hours 20 minutes</p>
+                </td>
+                <td>
+                  The first American manned flight lasting more than a day (22
+                  orbits). Due to the failure of a number of spacecraft systems,
+                  a manual deorbit was performed.
+                </td>
+              </tr>
+              <tr>
+                <td>Vostok-5 (USSR)</td>
+                <td>Valery Bykovsky</td>
+                <td>
+                  <p>14.06.1963</p>
+                </td>
+                <td>
+                  <p>4 days 23 hours 6 minutes</p>
+                </td>
+                <td>Second group space flight (together with Vostok-6).</td>
+              </tr>
+              <tr>
+                <td>Vostok-6 (USSR)</td>
+                <td>Valentina Tereshkova</td>
+                <td>
+                  <p>16.06.1963</p>
+                </td>
+                <td>
+                  <p>2 days 22 hours 50 minutes</p>
+                </td>
+                <td>
+                  The first woman in space. The ship approached Vostok-5 up to 5
+                  km.
+                </td>
+              </tr>
+              <tr>
+                <td>Voskhod-1 (USSR)</td>
+                <td>Vladimir Komarov, Konstantin Feoktistov, Boris Egorov</td>
+                <td>
+                  <p>12.10.1964</p>
+                </td>
+                <td>
+                  <p>1 day 17 min</p>
+                </td>
+                <td>
+                  Modified Vostok-class ship. The first multi-seat spacecraft.
+                  First flight without spacesuits.
+                </td>
+              </tr>
+              <tr>
+                <td>Voskhod-2 (USSR)</td>
+                <td>Pavel Belyaev, Alexey Leonov</td>
+                <td>
+                  <p>8.03.1965</p>
+                </td>
+                <td>
+                  <p>1 day 2 hours 2 minutes</p>
+                </td>
+                <td>First spacewalk (Leonov) lasting 10 minutes.</td>
+              </tr>
+              <tr>
+                <td>Gemini-3 (USA)</td>
+                <td>Virgil Grissom, John Young</td>
+                <td>
+                  <p>23.03.1965</p>
+                </td>
+                <td>
+                  <p>4 h 53 min</p>
+                </td>
+                <td>
+                  The first American two-seat spacecraft. The first manned
+                  spacecraft with the capability of orbital maneuvers. The first
+                  on-board computer that made it possible to calculate
+                  maneuvers.
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-4 (USA)</td>
+                <td>James McDivitt, Edward White</td>
+                <td>
+                  <p>3.06.1965</p>
+                </td>
+                <td>
+                  <p>4 days 1 hour 56 min</p>
+                </td>
+                <td>
+                  The first American spacewalk (White, 21 minutes). The first
+                  American four-day flight. Manual braking control for
+                  deorbiting due to computer failure.
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-5 (USA)</td>
+                <td>Gordon Cooper, Charles Conrad</td>
+                <td>
+                  <p>21.08.1965</p>
+                </td>
+                <td>
+                  <p>7 days 22 hours 56 minutes</p>
+                </td>
+                <td>
+                  First use of fuel cells to power ship systems. Testing control
+                  and navigation systems.
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-7 (USA)</td>
+                <td>Frank Borman, James Lovell</td>
+                <td>
+                  <p>4.12.1965</p>
+                </td>
+                <td>
+                  <p>13 days 18 hours 35 minutes</p>
+                </td>
+                <td>
+                  Longest American manned flight for the next eight years (206
+                  orbits). Record duration of flight to Soyuz-9. Rendezvous with
+                  Gemini 6.
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-6 (USA)</td>
+                <td>Walter &nbsp;Schirra, Thomas Stafford</td>
+                <td>
+                  <p>15.12.1965</p>
+                </td>
+                <td>
+                  <p>1 day 1 hour 51 min</p>
+                </td>
+                <td>
+                  The first approach of two manned spacecraft (at a distance of
+                  up to 2 meters).
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-8 (USA)</td>
+                <td>Neil Armstrong, David Scott</td>
+                <td>
+                  <p>16.03.1966</p>
+                </td>
+                <td>
+                  <p>10 h 41 min</p>
+                </td>
+                <td>
+                  The first docking of two spacecraft (with the Agena docking
+                  target). Emergency return to Earth due to control system
+                  malfunctions.
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-9 (USA)</td>
+                <td>Thomas Stafford, Eugene Cernan</td>
+                <td>
+                  <p>3.06.1966</p>
+                </td>
+                <td>
+                  <p>3 days 21 min</p>
+                </td>
+                <td>
+                  Cernan's spacewalk lasts 127 minutes. Approach to a docking
+                  target (without docking).
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-10 (USA)</td>
+                <td>John Young, Michael Collins</td>
+                <td>
+                  <p>18.07.1966</p>
+                </td>
+                <td>
+                  <p>2 days 22 hours 47 minutes</p>
+                </td>
+                <td>
+                  Docking with the Agena-10 target. Using its engine to raise
+                  the orbit to 763 km. Approach to the Agena-8 target. Collins'
+                  spacewalk lasts 39 minutes.
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-11 (USA)</td>
+                <td>Charles Conrad, Richard Gordon</td>
+                <td>
+                  <p>12.09.1966</p>
+                </td>
+                <td>
+                  <p>2 days 23 hours 17 minutes</p>
+                </td>
+                <td>
+                  Docking with the Agena target and using its engine to raise
+                  the orbit to 1369 km. Gordon's spacewalk lasts 163 minutes.
+                  First computer-controlled deorbit.
+                </td>
+              </tr>
+              <tr>
+                <td>Gemini-12 (USA)</td>
+                <td>James Lovell, Edwin Aldrin</td>
+                <td>
+                  <p>11.11.1966</p>
+                </td>
+                <td>
+                  <p>3 days 22 hours 34 minutes</p>
+                </td>
+                <td>
+                  The last flight of the Gemini class ship. Docking with the
+                  Agena target. Aldrin's spacewalk lasts 5.5 hours. Deorbiting
+                  under computer control.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-1 (USSR)</td>
+                <td>Vladimir Komarov</td>
+                <td>
+                  <p>23.04.1967</p>
+                </td>
+                <td>
+                  <p>1 day 2 hours 48 minutes</p>
+                </td>
+                <td>
+                  The braking parachute did not open, which resulted in the
+                  death of the astronaut.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 7 (USA)</td>
+                <td>Walter &nbsp;Schirra, Donn Eisel, Walter Cunningham</td>
+                <td>
+                  <p>11.10.1968</p>
+                </td>
+                <td>
+                  <p>10 days 20 hours 9 minutes</p>
+                </td>
+                <td>
+                  The first manned flight of the Apollo spacecraft. The first
+                  American three-seat spacecraft. Live TV broadcast from space.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-3 (USSR)</td>
+                <td>Georgy Beregovoy</td>
+                <td>
+                  <p>26.10.1968</p>
+                </td>
+                <td>
+                  <p>3 days 22 hours 51 minutes</p>
+                </td>
+                <td>Approximation with the unmanned Soyuz-2 spacecraft.</td>
+              </tr>
+              <tr>
+                <td>Apollo 8 (USA)</td>
+                <td>Frank Borman, James Lovell, William Anders</td>
+                <td>
+                  <p>21.12.1968</p>
+                </td>
+                <td>
+                  <p>6 days 3 hours</p>
+                </td>
+                <td>
+                  The first manned flight in lunar orbit. The first flight of
+                  the Saturn 5 rocket with a manned spacecraft. TV broadcast to
+                  Earth of views of the lunar surface.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-4 (USSR)</td>
+                <td>Vladimir Shatalov</td>
+                <td>
+                  <p>14.01.1969</p>
+                </td>
+                <td>
+                  <p>2 days 23 hours 21 minutes</p>
+                </td>
+                <td>
+                  The first docking of two manned spacecraft (with Soyuz-5).
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-5 (USSR)</td>
+                <td>Boris Volynov, Alexey Eliseev, Evgeny Khrunov</td>
+                <td>
+                  <p>15.01.1969</p>
+                </td>
+                <td>
+                  <p>3 days 54 min</p>
+                </td>
+                <td>
+                  Docking with Soyuz-4. Eliseev and Khrunov went into outer
+                  space and transferred to Soyuz-4.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 9 (USA)</td>
+                <td>James McDivitt, David Scott, Russell Schweickart</td>
+                <td>
+                  <p>3.03.1969</p>
+                </td>
+                <td>
+                  <p>10 days 1 hour 1 minute</p>
+                </td>
+                <td>
+                  The first manned tests of the lunar module in low-Earth orbit.
+                  Schweickart's 56-minute spacewalk to test a lunar spacesuit.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 10 (USA)</td>
+                <td>Thomas Stafford, John Young, Eugene Cernan</td>
+                <td>
+                  <p>18.05.1969</p>
+                </td>
+                <td>
+                  <p>8 days 3 min</p>
+                </td>
+                <td>
+                  Testing the lunar module in lunar orbit. Descent to the lunar
+                  surface to a height of 15 km. Speed ​​record for manned
+                  reentry (11.0825 km/s).
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 11 (USA)</td>
+                <td>Neil Armstrong, Michael Collins, Edwin Aldrin</td>
+                <td>
+                  <p>16.07.1969</p>
+                </td>
+                <td>
+                  <p>8 days 3 hours 18 minutes</p>
+                </td>
+                <td>
+                  First moon landing (Armstrong and Aldrin). Stay on the Moon
+                  outside the spacecraft for 152 minutes. 21.7 kg of lunar rocks
+                  were collected. Stay on the Moon for 21 hours 36 minutes.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-6 (USSR)</td>
+                <td>Georgy Shonin, Valery Kubasov</td>
+                <td>
+                  <p>11.10.1969</p>
+                </td>
+                <td>
+                  <p>4 days 22 hours 42 minutes</p>
+                </td>
+                <td>
+                  Approximation with the Soyuz-7 and Soyuz-8 spacecraft. The
+                  first experiment on welding metals in space.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-7 (USSR)</td>
+                <td>Anatoly Filipchenko, Vladyslav Volkov, Viktor Horbatko</td>
+                <td>
+                  <p>12.10.1969</p>
+                </td>
+                <td>
+                  <p>4 days 22 hours 41 minutes</p>
+                </td>
+                <td>
+                  Approximation with the Soyuz-6 and Soyuz-8 spacecraft.
+                  Experiments to create a space station. The first joint flight
+                  of three spacecraft and seven astronauts.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-8 (USSR)</td>
+                <td>Vladimir Shatalov, Alexey Eliseev</td>
+                <td>
+                  <p>13.10.1969</p>
+                </td>
+                <td>
+                  <p>4 days 22 hours 51 minutes</p>
+                </td>
+                <td>
+                  Approximation with the Soyuz-6 and Soyuz-7 spacecraft.
+                  Experiments to create a space station.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 12 (USA)</td>
+                <td>Charles Conrad, Richard Gordon, Alan Bean</td>
+                <td>
+                  <p>14.11.1969</p>
+                </td>
+                <td>
+                  <p>10 days 4 hours 36 minutes</p>
+                </td>
+                <td>
+                  Second Moon landing (Conrad and Bean). Stay on the Moon
+                  outside the ship for 465 minutes (2 exits). 34.4 kg of lunar
+                  rocks were collected. Stay on the Moon for 31 hours 31
+                  minutes.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 13 (USA)</td>
+                <td>James Lovell, John Swigert, Fred Hayes</td>
+                <td>
+                  <p>11.04.1970</p>
+                </td>
+                <td>
+                  <p>5 days 22 hours 55 minutes</p>
+                </td>
+                <td>
+                  The planned lunar landing was canceled due to an oxygen tank
+                  explosion. The crew returned safely to Earth, having completed
+                  a flyby of the Moon. Record distance from the Earth's surface
+                  (400,187 km).
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-9 (USSR)</td>
+                <td>Andriyan Nikolaev, Vitaly Sevastyanov</td>
+                <td>
+                  <p>1.06.1970</p>
+                </td>
+                <td>
+                  <p>17 days 16 hours 59 minutes</p>
+                </td>
+                <td>
+                  The flight marked the beginning of the era of long-term
+                  operation in space under zero-gravity conditions.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 14 (USA)</td>
+                <td>Alan Shepard, Stuart Roosa, Edgar Mitchell</td>
+                <td>
+                  <p>31.01.1971</p>
+                </td>
+                <td>
+                  <p>9 days 2 min</p>
+                </td>
+                <td>
+                  Third Moon landing (Shepard and Mitchell). Stay on the Moon
+                  outside the ship for 563 minutes (2 exits). 42.9 kg of lunar
+                  rocks were collected. Stay on the Moon for 33 hours 31
+                  minutes.
+                </td>
+              </tr>
+              <tr>
+                <td>Salyut-1 (USSR)</td>
+                <td>Orbital station (uncrewed)</td>
+                <td>
+                  <p>19.04.1971</p>
+                </td>
+                <td>
+                  <p>175 days</p>
+                </td>
+                <td>
+                  The first orbital station. Visit by the Soyuz-11 crew for 23
+                  days. Entered the atmosphere and ceased to exist on
+                  10/11/1971.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-10 (USSR)</td>
+                <td>
+                  Vladimir Shatalov, Alexey Eliseev, Nikolai Rukavishnikov
+                </td>
+                <td>
+                  <p>23.04.1971</p>
+                </td>
+                <td>
+                  <p>1 day 23 hours 46 minutes</p>
+                </td>
+                <td>
+                  Testing the docking port between the ship and the Salyut-1
+                  station. The astronauts did not enter the orbital station.
+                </td>
+              </tr>
+              <tr>
+                <td>Soyuz-11 (USSR)</td>
+                <td>Georgy Dobrovolsky, Vladislav Volkov, Viktor Patsaev</td>
+                <td>
+                  <p>16.06.1971</p>
+                </td>
+                <td>
+                  <p>23 days 18 hours 22 minutes</p>
+                </td>
+                <td>
+                  Docking with the Salyut-1 orbital station. Transfer of
+                  astronauts to the orbital station and stay in it for 23 days.
+                  The crew died while returning to Earth due to depressurization
+                  of the ship.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 15 (USA)</td>
+                <td>David Scott, Elfrid Warden, James Irwin</td>
+                <td>
+                  <p>26.07.1971</p>
+                </td>
+                <td>
+                  <p>12 days 7 hours 12 minutes</p>
+                </td>
+                <td>
+                  Fourth Moon landing (Scott and Irwin). The first use of the
+                  “lunomobile” - a wheeled vehicle. First deep space spacewalk
+                  (outside Earth orbit): Warden's spacewalk for 38 minutes. Stay
+                  on the Moon outside the ship for 18 hours 35 minutes (3
+                  exits). 76.8 kg of lunar rocks were collected. Stay on the
+                  Moon for 66 hours 55 minutes.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 16 (USA)</td>
+                <td>John Young, Thomas Mattingly, Charles Duke</td>
+                <td>
+                  <p>16.04.1972</p>
+                </td>
+                <td>
+                  <p>11 days 1 hour 51 minutes</p>
+                </td>
+                <td>
+                  Fifth moon landing (Young and Duke). Stay on the Moon outside
+                  the ship for 20 hours 14 minutes (3 exits). 94.7 kg of lunar
+                  rocks were collected. Stay on the Moon for 71 hours 2 minutes.
+                </td>
+              </tr>
+              <tr>
+                <td>Apollo 17 (USA)</td>
+                <td>Eugene Cernan, Ronald Evans, Harrison Schmitt</td>
+                <td>
+                  <p>7.12.1972</p>
+                </td>
+                <td>
+                  <p>12 days 13 hours 51 minutes</p>
+                </td>
+                <td>
+                  Sixth moon landing (Cernan and Schmitt). Stay on the Moon
+                  outside the ship for 22 hours 4 minutes (3 exits). 110.5 kg of
+                  lunar rocks were collected. Stay on the Moon for 74 hours 59
+                  minutes. Evans' spacewalk lasts 66 minutes.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </main>
     </div>
+    <script src="../earth.js"></script>
   </body>
 </html>
