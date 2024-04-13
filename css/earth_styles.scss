@@ -41,6 +41,7 @@ main {
 
   .chronology {
     display: none;
+    width: 100%;
   }
 
   h2 {
@@ -117,6 +118,16 @@ main {
       padding-bottom: 15px;
       text-align: justify;
       margin: 0;
+
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        color: rgb(0, 10, 65);
+      }
+
+      a:hover {
+        color: rgb(4, 0, 255);
+      }
     }
 
     video {
@@ -180,13 +191,13 @@ main {
     }
 
     @media screen and (max-width: 1100px) {
-        iframe {
-            grid-column: 1/-1;
-            height: 350px;
-          }
-          .places {
-            grid-column: 1/-1;
-          }
+      iframe {
+        grid-column: 1/-1;
+        height: 350px;
+      }
+      .places {
+        grid-column: 1/-1;
+      }
     }
   }
 }

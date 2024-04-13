@@ -39,6 +39,7 @@ main {
 }
 main .chronology {
   display: none;
+  width: 100%;
 }
 main h2 {
   color: rgb(0, 10, 65);
@@ -101,6 +102,14 @@ main .aboutISS p {
   padding-bottom: 15px;
   text-align: justify;
   margin: 0;
+}
+main .aboutISS p a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(0, 10, 65);
+}
+main .aboutISS p a:hover {
+  color: rgb(4, 0, 255);
 }
 main .aboutISS video {
   width: 90%;
