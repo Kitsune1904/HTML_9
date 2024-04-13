@@ -9,7 +9,7 @@ body {
 
 .conteiner {
   display: grid;
-  grid-template-columns: 5% 50% 40% 5%;
+  grid-template-columns: 15% 40% 30% 15%;
 }
 
 header {
@@ -18,7 +18,8 @@ header {
   justify-content: end;
   position: fixed;
   width: 100%;
-  
+  z-index: 1000;
+
   a {
     width: 80px;
     padding: 20px;
@@ -35,7 +36,7 @@ header {
 }
 
 main {
-margin-top: 60px;
+  margin: 100px 0 50px 0;
   grid-column: 2/-2;
 
   .chronology {
@@ -45,6 +46,10 @@ margin-top: 60px;
   h2 {
     color: rgb(0, 10, 65);
     font-size: 2rem;
+    text-align: center;
+  }
+
+  p {
     text-align: center;
   }
 
@@ -75,7 +80,7 @@ margin-top: 60px;
   }
 
   td:last-child {
-    text-align: justify ;
+    text-align: justify;
   }
 
   .main-row > td {
@@ -96,5 +101,114 @@ margin-top: 60px;
 
   tr:hover {
     background-color: #babaff;
+  }
+
+  .aboutISS {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 20px;
+
+    .info {
+      grid-column: 1/2;
+    }
+
+    p {
+      padding-bottom: 15px;
+      text-align: justify;
+      margin: 0;
+    }
+
+    video {
+      width: 90%;
+    }
+    @media screen and (max-width: 1100px) {
+      .info,
+      video {
+        grid-column: 1/-1;
+      }
+
+      video {
+        justify-self: center;
+      }
+    }
+  }
+
+  .sounds {
+    p {
+      text-align: justify;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #d7ecff;
+    }
+  }
+
+  .map-holder {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    h2 {
+      grid-column: 1/-1;
+    }
+
+    iframe {
+      grid-column: 1/2;
+      width: 100%;
+      height: 100%;
+    }
+
+    .places {
+      grid-column: 2/3;
+      border: 1px solid rgb(161, 161, 161);
+
+      p {
+        padding: 20px;
+        margin: 0;
+        border: 1px solid rgb(212, 212, 212);
+        text-align: justify;
+      }
+
+      p:hover {
+        background-color: #d7ecff;
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width: 1100px) {
+        iframe {
+            grid-column: 1/-1;
+            height: 350px;
+          }
+          .places {
+            grid-column: 1/-1;
+          }
+    }
+  }
+}
+
+footer {
+  background-color: rgb(0, 10, 65);
+  grid-column: 1/-1;
+
+  p {
+    text-align: center;
+    color: whitesmoke;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .conteiner {
+    grid-template-columns: 5% 50% 40% 5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .conteiner {
+    grid-template-columns: 10% 45% 35% 10%;
   }
 }
