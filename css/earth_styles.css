@@ -50,11 +50,11 @@ body {
 .conteiner main span {
   color: rgb(0, 0, 124);
   font-weight: 700;
-  z-index: 100;
 }
 .conteiner main span:hover {
   font-size: 1.3rem;
   cursor: pointer;
+  z-index: 100;
 }
 .conteiner main table {
   border-spacing: 0;

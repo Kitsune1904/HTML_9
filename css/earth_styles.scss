@@ -56,12 +56,12 @@ body {
     span {
       color: rgb(0, 0, 124);
       font-weight: 700;
-      z-index: 100;
     }
 
     span:hover {
       font-size: 1.3rem;
       cursor: pointer;
+      z-index: 100;
     }
 
     table {
