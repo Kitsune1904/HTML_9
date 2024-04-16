@@ -52,9 +52,8 @@ body {
   font-weight: 700;
 }
 .conteiner main span:hover {
-  font-size: 1.3rem;
+  color: #009196;
   cursor: pointer;
-  z-index: 100;
 }
 .conteiner main table {
   border-spacing: 0;
