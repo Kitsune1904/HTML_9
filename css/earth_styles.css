@@ -52,7 +52,7 @@ body {
   font-weight: 700;
 }
 .conteiner main span:hover {
-  color: #009196;
+  color: rgb(4, 0, 255);
   cursor: pointer;
 }
 .conteiner main table {
